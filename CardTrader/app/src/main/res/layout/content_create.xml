@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.arafat.cardcollector.CreateActivity"
+    tools:showIn="@layout/activity_create">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload"
+        android:id="@+id/uploadFlyerButton"
+        android:layout_marginRight="39dp"
+        android:onClick="onClickbuttonUpload"
+        android:layout_marginEnd="39dp"
+        android:layout_alignBottom="@+id/titleText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:src="@drawable/home"
+        android:background="@null"
+        android:layout_marginBottom="13dp"
+        android:onClick="onClickHome"
+        android:nestedScrollingEnabled="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Title: "
+        android:id="@+id/titleText"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_above="@+id/editText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="19dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="55dp"
+        android:background="#ffffff"
+        android:paddingTop="5dp"
+        android:singleLine="true"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From Photo Library"
+        android:id="@+id/buttonPhotoLibrary"
+        android:onClick="onClickbuttonPhotoLibrary"
+        android:layout_marginBottom="14dp"
+        android:layout_above="@+id/imageButton"
+        android:layout_toRightOf="@+id/titleText"
+        android:layout_toEndOf="@+id/titleText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Type: "
+        android:id="@+id/textView"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/editText2"
+        android:layout_alignLeft="@+id/titleText"
+        android:layout_alignStart="@+id/titleText" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:maxLines="3"
+        android:paddingTop="5dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/buttonPhotoLibrary"
+        android:layout_alignEnd="@+id/imageButton"
+        android:layout_alignRight="@+id/imageButton"
+        android:layout_marginBottom="27dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:visibility="visible" />
+
+</RelativeLayout>
