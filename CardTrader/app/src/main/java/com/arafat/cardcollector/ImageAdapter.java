@@ -10,6 +10,7 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
+//used image hoste framework
 
 public class ImageAdapter extends BaseAdapter {
 
@@ -79,10 +80,6 @@ public class ImageAdapter extends BaseAdapter {
             i++;
 
     }
-
-
-
-
 
     // references to our images
     private Bitmap[] mThumbIds = {
