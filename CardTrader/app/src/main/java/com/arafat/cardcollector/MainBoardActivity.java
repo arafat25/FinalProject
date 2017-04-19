@@ -30,6 +30,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static android.R.attr.value;
+
 public class MainBoardActivity extends AppCompatActivity implements GestureDetector.OnGestureListener,
         GestureDetector.OnDoubleTapListener{
 
@@ -103,6 +105,9 @@ public class MainBoardActivity extends AppCompatActivity implements GestureDetec
         String menuItemName = menuItems[menuItemIndex];
         String listItemName = mThumbIds2[info.position];
 
+        Intent intent = new Intent(MainBoardActivity.this,FavoritesActivity.class);
+        intent.putExtra("key",value);
+        startActivity(intent);
         TextView text = (TextView) findViewById(R.id.footer);
         text.setText(String.format("Selected %s for item %s", menuItemName, listItemName));
         return true;

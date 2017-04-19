@@ -18,7 +18,11 @@ public class FavoritesActivity extends AppCompatActivity {
 
         mediaPlayer.start();
 
+
     }
+
+
+
 
     @Override
     protected void onPause() {

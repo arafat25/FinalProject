@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Upload"
-        android:id="@+id/uploadFlyerButton"
+        android:id="@+id/upload"
         android:layout_marginRight="39dp"
         android:onClick="onClickbuttonUpload"
         android:layout_marginEnd="39dp"
@@ -52,7 +52,6 @@
         android:layout_marginBottom="55dp"
         android:background="#ffffff"
         android:paddingTop="5dp"
-        android:singleLine="true"
         android:layout_above="@+id/textView"
         android:layout_centerHorizontal="true" />
 

@@ -14,7 +14,7 @@ public class signup extends AppCompatActivity {
 
     }
 
-    public void onClickConfirm(View view) {
+    public void onClickRegister(View view) {
         Intent intent = new Intent(signup.this, MainBoardActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
